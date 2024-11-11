@@ -18,7 +18,7 @@ The `⭐` indicates my personal highlights. And the `🔥` indicates the most im
 https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13
 
 * 🔥⭐ params collections - You can now use params with any recognized collection type, including System.Span<T>, System.ReadOnlySpan<T>, and types that implement System.Collections.Generic.IEnumerable<T> and have an Add method.
-* 🔥⭐ New lock object - The C# lock statement recognizes if the target of the lock is a Lock object.
+* 🔥⭐ New `Lock` object - The C# lock statement recognizes if the target of the lock is a Lock object.
 * Implicit index access in initializers
 * ref and unsafe in iterators and async methods
 * allows ref struct
@@ -58,22 +58,22 @@ https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/libraries
     * Performance improvements
 * Diagnostics
   * Debug.Assert reports assert condition
-  * 🔥⭐New Activity.AddLink method (good for Otel)
+  * 🔥⭐New `Activity.AddLink` method (good for Otel)
   * Out-of-proc Meter wildcard listening
   * Logging source generator for partial classes with primary constructors
 * Networking
-  * SocketsHttpHandler is default in HttpClientFactory
+  * SocketsHttpHandler is default in `HttpClientFactory`
   * System.Net.ServerSentEvents (used by OpenAI to stream text), protocal on top of HTTP
   * `TLS resume` with client certificates on Linux
   * WebSocket keep-alive ping and timeout
-  * HttpClientFactory no longer logs header values by default
+  * `HttpClientFactory` no longer logs header values by default
 * Reflection
-  * PersistedAssemblyBuilder 
-  * TypeName is a parser for ECMA-335 type names that provides much the same functionality as System.Type 
+  * `PersistedAssemblyBuilder` 
+  * `TypeName` is a parser for ECMA-335 type names that provides much the same functionality as `System.Type` 
 * Regular expressions
   * `[GeneratedRegex]` on properties, because C# 13 supports partial properties (on mehtods it was available since .NET 7)
   * `Regex.EnumerateSplits` instead of `Regex.Split` for no allocations
-* 🔥⭐ System.Guid V7 - which "features a time-ordered value field derived from the widely implemented and well-known Unix Epoch timestamp source".
+* 🔥⭐ `System.Guid V7` - which "features a time-ordered value field derived from the widely implemented and well-known Unix Epoch timestamp source".
 * System.IO - Starting in .NET 9 use zlib-ng
 * New `Tensor<T>` type - good for AI - Represent and encode data such as text sequences (tokens), images, video, and audio; Efficiently manipulate higher-dimensional data.
 * Threading
@@ -157,7 +157,7 @@ https://learn.microsoft.com/en-us/ef/core/what-is-new/ef-core-9.0/whatsnew
 
 * Azure Cosmos DB for NoSQL
 * 🔥⭐ AOT and pre-compiled queries - there is a lot of work going on behind the scenes to allow EF Core to run without just-in-time (JIT) compilation. Instead, EF compile ahead-of-time (AOT) everything needed to run queries in the application.
-* ⭐ LINQ and SQL translation
+* ⭐ LINQ and SQL translation improvements
 * Complex types: GroupBy and ExecuteUpdate support
 * Prune unneeded elements from SQL
 * And many more
